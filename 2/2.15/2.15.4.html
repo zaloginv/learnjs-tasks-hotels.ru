@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+
+<script>
+	// function pow(num, degree) {
+	// 	let result = (num ** degree);
+	// 	return result;
+	// }
+	//
+	// let num = +(prompt('Введите число для возведения в степень: '))
+	// let degree = +(prompt('Введите степень числа: '))
+
+	function pow(num, degree) {
+		let result = num;
+
+		for (let i = 1; i < degree; i++) {
+			result *= num;
+		}
+		return result;
+	}
+
+	let num = +(prompt('Введите число для возведения в степень: '))
+	let degree = +(prompt('Введите степень числа: '))
+
+	if (num < 1) {
+		alert(`Степень ${num} не поддерживается, используйте натуральное число`);
+	} else {
+		alert( pow(degree, num) );
+	}
+
+</script>
+
+</body>
+
+</html>

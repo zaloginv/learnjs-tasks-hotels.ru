@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+
+<script>
+<!--Переведите текст вида border-left-width в borderLeftWidth-->
+	// function filterRange(arr, a, b) {
+	// 	let new_arr = [];
+	// 	for (let element of arr) {
+	// 		if (element >= a && element <= b) {
+	// 			new_arr.push(element)
+	// 		}
+	// 	}
+	//
+	// 	return new_arr
+	// }
+
+	function filterRange(arr, a, b) {
+		return arr.filter(item => (a <= item && item <= b));
+	}
+
+	let arr = [5, 3, 8, 1];
+
+	let filtered = filterRange(arr, 1, 4);
+
+	alert( filtered ); // 3,1 (совпадающие значения)
+
+	alert( arr ); // 5,3,8,1 (без изменений)
+
+</script>
+
+</body>
+
+</html>

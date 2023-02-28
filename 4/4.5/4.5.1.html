@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+
+<script>
+	function A(object) { return object }
+	function B(object) {  return object }
+
+	let object = {};
+	let a = new A(object);
+	let b = new B(object);
+
+	alert( a == b );
+</script>
+
+</body>
+
+</html>

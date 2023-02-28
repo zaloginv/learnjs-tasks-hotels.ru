@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+
+<script>
+	<!--Сколько сегодня прошло секунд?-->
+	function getSecondsToday() {
+		let d = new Date();
+		return d.getHours() * 3600 + d.getMinutes() * 60 + d.getSeconds();
+	}
+
+	alert( getSecondsToday() );
+
+</script>
+
+</body>
+
+</html>

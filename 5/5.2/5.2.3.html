@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+
+<script>
+	function readNumber() {
+		number = NaN
+		while (isNaN(number)) {
+
+			number = prompt('Введите число: ')
+
+			if (number === '' || number === null) {
+				return null
+			} else {
+				number = +number
+			}
+		}
+
+		return number
+	}
+
+	alert(readNumber())
+</script>
+
+</body>
+
+</html>
